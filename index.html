@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Happy Birthday Ratna Sayang ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffe9f4 0%, #ffe0ea 100%);
+            font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            animation: flyUp 8s ease-in infinite;
+            pointer-events: none;
+            font-size: 2.5rem;
+            opacity: 0.7;
+        }
+
+        @keyframes flyUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-120vh) rotate(20deg);
+                opacity: 0;
+            }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 60px 60px 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            padding: 30px 25px 50px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(2px);
+            text-align: center;
+            z-index: 10;
+            transition: transform 0.3s ease;
+            border: 2px solid rgba(255, 215, 225, 0.6);
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+        }
+
+        .candle-icon {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            animation: flicker 1.5s infinite;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; text-shadow: 0 0 5px orange; }
+            50% { opacity: 0.9; text-shadow: 0 0 15px #ffaa00; }
+            100% { opacity: 1; text-shadow: 0 0 5px orange; }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, #ff6b8b, #ff8aa8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin: 15px 0 10px;
+            font-weight: 700;
+        }
+
+        .message {
+            background: #fff5f8;
+            padding: 20px;
+            border-radius: 35px;
+            margin: 20px 0;
+            text-align: left;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #4a2e36;
+            border-left: 8px solid #ff98b2;
+            font-weight: 500;
+        }
+
+        .message p {
+            margin-bottom: 12px;
+        }
+
+        .photo-frame {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+
+        .photo-card {
+            background: #ffe2eb;
+            border-radius: 30px;
+            padding: 15px 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 130px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .photo-card:hover {
+            transform: scale(1.02);
+        }
+
+        .photo-card img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 20px;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .photo-card p {
+            font-size: 0.7rem;
+            color: #ff6b8b;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #ff6b8b;
+            font-weight: bold;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 20px 18px 35px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            .message {
+                font-size: 0.9rem;
+            }
+            .photo-card img {
+                max-width: 110px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="balloon-container"></div>
+
+<div class="card">
+    <div class="candle-icon">🎂🕯️</div>
+    <h1>Happy Birthday, Ratna! 🎉</h1>
+
+    <div class="message">
+        <p>💌 <strong>Happy birthday, Ratna Sayang yang ke-21!</strong> 🎂🎉</p>
+        <p>Semoga panjang umur, sehat selalu, dilancarkan rezekinya, dan dimudahkan segala urusannya ya sayang 💫</p>
+        <p>Dan semoga <strong>tahun ini kamu bisa lulus & mendapatkan gelar S.Pd.!</strong> Aamiin! 🎓✨</p>
+        <p>Oh iya... aku mau ngucapin <strong>Makasih banget buat kamu.</strong><br>
+        Makasih karena <strong>masih mau bertahan sama aku</strong> sampai sekarang.<br>
+        Makasih karena masih sabar meskipun aku sering bikin kamu marah, banyak kekurangan, dan kadang gak ngertiin kamu. 😔💦</p>
+        <p>Tapi kamu gak pernah menyerah buat aku. Kamu tetap di sini. Kamu tetap jadi <strong>Teman perjalananku yang paling berharga.</strong> 🚗💨💕</p>
+        <p><strong>I Love You Ratnaaa ❤️❤️❤️</strong></p>
+    </div>
+
+    <!-- BAGIAN FOTO: GANTI dengan nama file gambarmu -->
+    <div class="photo-frame">
+        <div class="photo-card">
+            <img src="1.jpg" alt="Kenangan bersama">
+        </div>
+        <div class="photo-card">
+            <img src="5.jpg" alt="Kita berdua">
+        </div>
+    </div>
+
+    <footer>
+        ✨ Happy Birthday Ya. I Love You ❤️❤️❤️ ✨
+    </footer>
+</div>
+
+<audio id="bgMusic" src="love.mp3" loop></audio>
+
+<script>
+    // BALON TERBANG
+    function createBalloon() {
+        const balloon = document.createElement('div');
+        balloon.classList.add('balloon');
+        const emojis = ['🎈', '🎀', '💖', '🎂', '✨', '🎉', '💝', '🌸', '🎊', '❤️', '🧸', '🍰'];
+        balloon.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+        balloon.style.left = Math.random() * 100 + '%';
+        balloon.style.fontSize = (1.6 + Math.random() * 1.8) + 'rem';
+        balloon.style.animationDuration = 5 + Math.random() * 7 + 's';
+        balloon.style.animationDelay = Math.random() * 5 + 's';
+        document.getElementById('balloon-container').appendChild(balloon);
+        setTimeout(() => balloon.remove(), 13000);
+    }
+    setInterval(createBalloon, 600);
+    for(let i = 0; i < 12; i++) setTimeout(createBalloon, i*200);
+
+    // ========== MUSIK MP3 AUTO PLAY + LOOP INTRO 33 DETIK ==========
+    const audio = document.getElementById('bgMusic');
+    const INTRO_DURATION = 33; // detik
+    
+    // Coba mulai musik otomatis
+    audio.play().catch(function(error) {
+        console.log("Auto play ditolak browser. Pengguna perlu klik di halaman.");
+        // Jika auto play diblokir, musik akan jalan saat pengguna klik di mana saja
+        document.body.addEventListener('click', function playOnce() {
+            audio.play();
+            document.body.removeEventListener('click', playOnce);
+        });
+    });
+    
+    // Loop intro: setiap 33 detik, kembali ke awal
+    setInterval(() => {
+        if (audio.currentTime >= INTRO_DURATION) {
+            audio.currentTime = 0;
+            audio.play();
+        }
+    }, 1000);
+    
+    // Jika musik selesai (just in case), putar ulang
+    audio.addEventListener('ended', () => {
+        audio.currentTime = 0;
+        audio.play();
+    });
+</script>
+</body>
+</html>
